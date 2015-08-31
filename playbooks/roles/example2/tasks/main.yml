@@ -1,0 +1,11 @@
+---
+
+- debug: msg="6, example2/tasks/main.yml {{example_version}}"
+
+- include: a.yml
+
+- debug: msg="8, example2/tasks/main.yml {{example_version}}"
+
+- include: b.yml
+
+- debug: msg="10, example2/tasks/main.yml {{example_version}}"

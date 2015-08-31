@@ -1,0 +1,9 @@
+#!/bin/bash
+
+ansible-playbook \
+'playbooks/example.yml' \
+--inventory-file='inventories/vagrant.inventory' \
+--connection=ssh \
+--sudo \
+--user='vagrant' \
+--private-key='./.vagrant/machines/default/virtualbox/private_key'

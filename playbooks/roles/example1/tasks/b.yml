@@ -1,0 +1,3 @@
+---
+
+- debug: msg="4, example1/tasks/b.yml {{example_version}}"

@@ -1,0 +1,59 @@
+
+PLAY [all] ******************************************************************** 
+
+GATHERING FACTS *************************************************************** 
+ok: [machine]
+
+TASK: [example1 | debug msg="1, example1/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "1, example1/tasks/main.yml EXAMPLE 1 VERSION"
+}
+
+TASK: [example1 | debug msg="2, example1/tasks/a.yml {{example_version}}"] **** 
+ok: [machine] => {
+    "msg": "2, example1/tasks/a.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example1 | debug msg="3, example1/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "3, example1/tasks/main.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example1 | debug msg="4, example1/tasks/b.yml {{example_version}}"] **** 
+ok: [machine] => {
+    "msg": "4, example1/tasks/b.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example1 | debug msg="5, example1/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "5, example1/tasks/main.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example2 | debug msg="6, example2/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "6, example2/tasks/main.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example2 | debug msg="7, example2/tasks/a.yml {{example_version}}"] **** 
+ok: [machine] => {
+    "msg": "7, example2/tasks/a.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example2 | debug msg="8, example2/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "8, example2/tasks/main.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example2 | debug msg="9, example2/tasks/a.yml {{example_version}}"] **** 
+ok: [machine] => {
+    "msg": "9, example2/tasks/a.yml EXAMPLE 2 VERSION"
+}
+
+TASK: [example2 | debug msg="10, example2/tasks/main.yml {{example_version}}"] *** 
+ok: [machine] => {
+    "msg": "10, example2/tasks/main.yml EXAMPLE 2 VERSION"
+}
+
+PLAY RECAP ******************************************************************** 
+machine                    : ok=11   changed=0    unreachable=0    failed=0   
+
